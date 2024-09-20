@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.fild {
+    width: 600px;
+    padding: 25px 40px;
+    background-color: rgba(230, 250, 255, 0.829);
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid plum;
+    box-shadow: 0px 0px 16px #0000006e, -6px -6px 20px rgba(221, 160, 221, 0.507);
+}
+.fild h1 {
+    text-align: center;
+    color: plum;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+.form-file {
+    text-align: center;
+    margin: 30px 0;
+}
+.form-file p{
+    margin-top: 3px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    word-spacing: 4px;
+}
+form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid plum;
+}
+.btn-file {
+    position: relative;
+}
+.form-file button {
+    position: relative;
+    background-color: plum;
+    width: 100%;
+    padding: 8px;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    z-index: 2;
+}
+.form-file button:hover {
+    background-color: rgba(221, 160, 221, 0.336);
+}
+.plum #laft_plum{
+    position: absolute;
+    width: 35px;
+    top: -4px;
+    left: 60px;
+    animation: plum2 3s;
+    -webkit-animation: plum2 3s infinite;
+}
+@keyframes plum2{
+    0% { transform:rotate(360deg) ; -webkit-transform:rotate(360deg) ; -moz-transform:rotate(360deg) ; -ms-transform:rotate(360deg) ; -o-transform:rotate(360deg) ; }
+}
+.plum #right_plum{
+    position: absolute;
+    width: 35px;
+    top: -4px;
+    right: 60px;
+    animation: plum3 3s;
+    -webkit-animation: plum3 3s infinite;
+}
+@keyframes plum3{
+    0% { transform:rotate(-360deg) ; -webkit-transform:rotate(-360deg) ; -moz-transform:rotate(-360deg) ; -ms-transform:rotate(-360deg) ; -o-transform:rotate(-360deg) ; }
+}
+.show-hide {
+    position: relative;
+}
+#password {
+    padding-right: 60px;
+}
+.show-pass {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 1px;
+    right: 1px;
+    background-color: plum;
+    border: 1px solid #000;
+}
+.show-hide i {
+    margin: 10px 0;
+}
+.hide-pass {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hide-pass i {
+    margin: 10px 9px 10px 12px;
+    display: none;
+}
+#co_password {
+    padding-right: 60px;
+}
+.form-gender input{
+    display: none;
+}
+form .form-gender label {
+    display: inline-block;
+    align-items: center;
+    width: 256px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid plum;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+#gender1:checked ~ .gender1,
+#gender2:checked ~ .gender2 {
+  background: plum;
+  border-color: #000;
+}
+form .form-gender {
+    position: relative;
+}
+form .form-gender .dot {
+    width: 20px;
+    height: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    top: 50%;
+    outline: 1px;
+    position: absolute;
+    transition: all 0.3s ease;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+#gender1:checked ~ .gender1 .dot,
+#gender2:checked ~ .gender2 .dot {
+  background: #fff;
+}
+form .form-gender .dot::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(2);
+}
+#gender1:checked ~ .gender1 .dot:before,
+#gender2:checked ~ .gender2 .dot:before {
+  background: #333;
+  transform: translate(-50%, -50%) scale(1);
+}
+form .form-gender label .text {
+    color: #333;
+    font-size: 18px;
+    padding-left: 27px;
+    text-transform: capitalize;
+    margin-top: 9px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+#gender1:checked ~ .gender1 .text,
+#gender2:checked ~ .gender2 .text {
+  color: #fff;
+}
+#gendererr {
+    position: absolute;
+    color: red;
+    left: 50%;
+    font-size: 14px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}

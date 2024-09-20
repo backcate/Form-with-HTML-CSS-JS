@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="fild">
+        <h1>Registration</h1>
+        <form action="#" method="post">
+            <div class="form-file">
+                <input type="text" placeholder="Enter Your full Name" id="fulname">
+                <p id="nameerr"></p>
+            </div>
+            <div class="form-file">
+                <input type="email" placeholder="Enter Your Email" id="e_mail">
+                <p id="emailerr"></p>
+            </div>
+            <div class="form-file show-hide">
+                <input type="password" placeholder="Enter Your Password" id="password">
+                <p id="passworderr"></p>
+                <div class="show-pass">
+                    <i class="fa-solid fa-eye" onclick="showpass()" id="showeye"></i>
+                    <div class="hide-pass">
+                        <i class="fa-solid fa-eye-slash" onclick="showpass()" id="hideeye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-file show-hide">
+                <input type="password" placeholder="Confirm Password" id="co_password">
+                <p id="co_passworderr"></p>
+                <div class="show-pass">
+                    <i class="fa-solid fa-eye" onclick="conshowpass()" id="showeye_co"></i>
+                    <div class="hide-pass">
+                        <i class="fa-solid fa-eye-slash" onclick="conshowpass()" id="hideeye_co"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-gender">
+                <input type="radio" name="gender" id="gender1">
+                <input type="radio" name="gender" id="gender2">
+
+                <label for="gender1" class="gender1">
+                    <div class="dot"></div>
+                    <div class="text">male</div>
+                </label>
+                <label for="gender2" class="gender2">
+                    <div class="dot"></div>
+                    <div class="text">female</div>
+                </label>
+                <p id="gendererr"></p>
+            </div>
+            
+            
+
+            <div class="form-file">
+                <div class="btn-file">
+                    <button type="submit" onclick="return sub()">register</button>
+                    <div class="plum">
+                        <img src="img/plum.png" alt="plum_flower" id="laft_plum">
+                        <img src="img/plum2.png" alt="plum_flower" id="right_plum">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
